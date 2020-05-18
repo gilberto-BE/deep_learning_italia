@@ -55,6 +55,10 @@ def data_proc():
 def univariate_data(dataset, start_index,
                     end_index, history_size,
                     target_size):
+    """The parameter history_size is the size of the past window of
+    information. The target_size is how far in the future does the model
+    need to learn to predict. The target_size is the label
+    that needs to be predicted."""
     data = []
     labels = []
 
